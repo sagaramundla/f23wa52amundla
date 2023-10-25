@@ -8,8 +8,8 @@ router.get('/', function(req, res, next) {
  else {
     raksha = req.query.x;
  }
- var result = Math.pow(raksha);
-  res.render('computation', { hello: `Math.pow(${raksha}) is ${result}` });
+ var result = Math.sign(raksha);
+  res.render('computation', { hello: `Math.sign(${raksha}) is ${result}` });
 });
 
 module.exports = router;
